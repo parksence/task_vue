@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
-  { path: '/detail', name: 'detail', component: DetailPage },
+  { path: '/detail/:id/:title', name: 'detail', component: DetailPage }, // ID를 받는 상세 페이지 경로 추가
   { path: '/about', name: 'about', component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue') },
   { path: '/table', name: 'table', component: TableView }
 ];
@@ -19,4 +19,4 @@ const router = new VueRouter({
   routes
 });
 
-export default router
+export default router;
