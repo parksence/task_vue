@@ -5894,7 +5894,7 @@ tui-grid@^4.21.22:
     tui-pagination "^3.4.0"
     xlsx "^0.17.1"
 
-tui-pagination@^3.4.0:
+tui-pagination@3, tui-pagination@^3.4.0:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/tui-pagination/-/tui-pagination-3.4.1.tgz#981db1c85543a9a0660b590af059f47feb755322"
   integrity sha512-W09L0wPMSFstthBhQjcLNDnN1yuCEDn/tIXmaKdTpNFYa11eNrNo/rOwXzrugXvP2arZ60KmVhkFzoAOEuV0Sg==

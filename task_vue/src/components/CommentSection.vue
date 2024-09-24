@@ -37,6 +37,12 @@ export default {
       return this.getComments(this.postId);
     }
   },
+  watch: {
+    ...mapGetters(['getComments']),
+    comments() {
+      return this.getComments(this.postId);
+    }
+  },
   methods: {
     ...mapActions(['addComment']),
     submitComment() {
@@ -45,8 +51,8 @@ export default {
         this.addComment({ postId: this.postId, comment: this.newComment });
 
         // 댓글 직접 업데이트
-        this.newComment = ''; // 댓글 입력 초기화
         this.comments.push(this.newComment); // 새로운 댓글 추가
+        this.newComment = ''; // 댓글 입력 초기화
       }
     }
   }
